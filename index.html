@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- DaisyUi and tailwind Css -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
@@ -21,6 +23,10 @@
     <style>
       .lato {
         font-family: "Lato", sans-serif;
+      }
+      .box-shadow{
+        box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+
       }
      
     </style>
@@ -89,17 +95,17 @@
               class="input rounded-full  lg:w-96 outline-none md:w-auto"
             />
             <div class="absolute lg:right-32 pointer-events-none">
-              <!-- Replace 'icon.svg' with your icon file or use an icon library -->
+              
               <img src="./images/Frame.png" alt="">
-              </svg>
+              
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main class="lg:mx-12">
+    <main class=" mx-5 lg:mx-12">
       <!-- banner -->
-      <section class="text-white ">
+      <section class="text-white relative ">
         <div class="carousel w-full rounded-xl">
           <!-- slide-1 -->
           <div id="slide1" class="carousel-item relative w-full">
@@ -175,7 +181,34 @@
             </div>
           </div>
         </div>
+<!-- Banner extra section -->
+
+        <div class=" hidden  lg:flex text-black bg-white absolute justify-around box-shadow rounded-lg gap-20 -bottom-10 ml-28 ">
+          <div class="text-center">
+            <img class="img" src="./images/fruit1.png" alt="">
+            <h3 class="text-xl font-medium ">Grapes</h3>
+          </div>
+          <div class="text-center">
+            <img class="img" src="./images/fruit2.png" alt="">
+            <h3 class="text-xl font-medium ">Orange</h3>
+          </div>
+          <div class="text-center">
+            <img class="img" src="./images/fruit3.png" alt="">
+            <h3 class="text-xl font-medium ">Mango</h3>
+          </div>
+          <div class="text-center">
+            <img class="img" src="./images/fruit4.png" alt="">
+            <h3 class="text-xl font-medium ">Strawberry</h3>
+          </div>
+          <div class="text-center">
+            <img class="img" src="./images/fruit5.png" alt="">
+            <h3 class="text-xl font-medium 
+            ">Pomegranate</h3>
+          </div>
+        </div>
       </section>
+      
+      
 
     </main>
   </body>
