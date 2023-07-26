@@ -4,9 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <!-- DaisyUi and tailwind Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lato {
+        font-family: "Lato", sans-serif;
+      }
+      .bg-primary {
+        background: #f85559;
+      }
+     
+    </style>
   </head>
-  <body>
-    <header class=""></header>
+  <body class="lato">
+    <header class=>
+      <!-- nav-bar section -->
+      <nav
+        class="lg:bg-[#f85559] text-black lg:text-white rounded-full mx-2 lg:mx-12 my-10 "
+      >
+        <div class="navbar  flex  lg:justify-around">
+          <div class="navbar-start lg:flex lg:justify-around">
+            <!-- Items for large -->
+            <div class="navbar-center hidden lg:flex lg:justify-around">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+           
+            
+              <!-- Drop Down -->
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            <!-- Logo and name -->
+            <div class="flex align-middle gap-3">
+              <div class="w-11 h-10">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <h3 class="font-bold text-xl lg:text-3xl py-3">Fruit Burst</h3>
+            </div>
+          
+            </div>
+          <!-- Search -->
+          <div class="hidden relative lg:contents form-control flex justify-end">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="input rounded-full  lg:w-96 outline-none md:w-auto"
+            />
+            <div class="absolute lg:right-32 pointer-events-none">
+              <!-- Replace 'icon.svg' with your icon file or use an icon library -->
+              <img src="./images/Frame.png" alt="">
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main></main>
   </body>
 </html>
